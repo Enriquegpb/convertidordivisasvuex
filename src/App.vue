@@ -9,8 +9,7 @@ import ConvertorDivisas from './components/ConvertorDivisas.vue'
 export default {
   name: 'App',
   components: {
-    ConvertorDivisas
-    
+    ConvertorDivisas,
   }
 }
 </script>
@@ -23,5 +22,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+ 
+}
+*{
+  background-color:blanchedalmond;
 }
 </style>
