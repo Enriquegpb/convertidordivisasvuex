@@ -18,7 +18,6 @@
 
 <script>
 export default {
-    
     name:"ConvertorDivisas",
     mounted(){
         console.log("La cantidad inicial en el convertor de divisas es de: " +this.$store.state.moneda)//Le decimos a la consola de la aplicacion cual es valor total de las cantidad de dinero que ha depositado en el convertor
@@ -35,7 +34,6 @@ export default {
         monedasComputed(){
             return this.$store.state.moneda;
         }
-        
     },
     methods:{        
         convertirMoneda(){
@@ -73,7 +71,7 @@ export default {
                  this.monedaDivisa=this.monedaLocal * 1.669421;
                  break;
             }
-           return this.monedaDivisa;
+           return this.monedaDivisa;//Devuelvo a un valor, que logicamente es la operacion que ha hemos hecho para convertir una moneneda a otra
         }
         
     },
